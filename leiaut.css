@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 800px;
+}
+
+.mb-10 {
+    margin-bottom: 1rem;
+}
+
+.mb-15 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.mb-25 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-30 {
+    margin-bottom: 3rem;
+}
+
+.mt-10 {
+    margin-bottom: 1rem;
+}
+
+.mt-15 {
+    margin-bottom: 1.5rem;
+}
+
+.mt-20 {
+    margin-bottom: 2rem;
+}
+
+.mt-25 {
+    margin-bottom: 2.5rem;
+}
+
+.mt-30 {
+    margin-bottom: 3rem;
+}
+
+.mx-10 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.mx-15 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.mx-20 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-left {
+    text-align: left;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec-sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+    grid-template-areas: "texto foto";
+}
+
+.div-sobre-foto {
+    grid-area: foto;
+}
+
+.div-sobre-texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sec-sobre-itens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1.5rem;
+}
