@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="leiaut.css" media="screen">
     <title>PROCURE UM MÉDICO</title>
@@ -16,25 +17,20 @@
 
 <body>
     <div class="container">
-        <header class="mb-30">
-            <i class="bi-person-lines-fill logotipo"></i>
-            <a href="#" class="btn-contorno">LINKS</a>
-        </header>
+        <header class="mb-30"></header>
         <main class="ta-center mb-30">
-            <h6 class="mb-20">PROCURE UM PROFISSIONAL PROXIMO À VOCÊ</h6>
-            <h1 class="mb-20">NUTRICIONISTAS</h1>
-            <p class="mb-20">CUIDE-SE! ENTRE EM CONTATO COM O PROFISSIONAL QUE VOCÊ MELHOR SE IDENTIFICA</p>
-
-            <a href="#" class="btn-solido">CONTATOS</a>
+            <h6 class="mb-20" data-aos="fade-up">PROCURE UM PROFISSIONAL PROXIMO À VOCÊ</h6>
+            <h1 class="mb-20" data-aos="fade-up">NUTRICIONISTA</h1>
+            <p class="mb-20" id="cuide-se" data-aos="fade-up">CUIDE-SE! ENTRE EM CONTATO COM O PROFISSIONAL QUE MELHOR SE IDENTIFICAR</p>
         </main>
 
         <section class="sec-sobre mb-30">
-            <div class="div-sobre-foto">
+            <div class="div-sobre-foto" data-aos="fade-left">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFoC9byr1mXUBbtpiGjxdXRdmnkbFbRvIjTQ&usqp=CAU"
                     alt="Nutricionista">
             </div>
-            <div class="div-sobre-texto">
-                <h2>Escolha seu melhor nutricionista!</h2>
+            <div class="div-sobre-texto" data-aos="fade-right">
+                <h2>Escolha o melhor!</h2><br>
                 <p>O processo de escolha do melhor nutricionista exige uma avaliação criteriosa de elementos essenciais.
                     A formação acadêmica e credibilidade do profissional são prioritárias, sendo crucial verificar a
                     graduação reconhecida e registro no conselho de nutricionistas. A experiência prática e
@@ -45,58 +41,64 @@
                     pacientes, para garantir uma escolha alinhada às expectativas e necessidades específicas de cada
                     pessoa.</p><br>
 
-                <h3>SOFT SKILLS</h3>
+                <h2 data-aos="zoom-in">Soft Skills</h2>
 
             </div>
         </section>
 
         <section class="sec-sobre-itens mb-30">
-            <div class="div-item-sobre">
+            <div class="div-item-sobre" data-aos="flip-up">
                 <i class="bi bi-person-heart mb-10"></i>
                 <p>Conhecimento técnico</p>
             </div>
 
-            <div class="div-item-sobre">
+            <div class="div-item-sobre" data-aos="flip-up">
                 <i class="bi bi-clipboard-pulse mb-10"></i>
                 <p>Credibilidade</p>
             </div>
 
-            <div class="div-item-sobre">
+            <div class="div-item-sobre" data-aos="flip-up">
                 <i class="bi bi-shield-check mb-10"></i>
                 <p>Empatia</p>
             </div>
 
-            <div class="div-item-sobre">
+            <div class="div-item-sobre" data-aos="flip-up">
                 <i class="bi bi-apple mb-10"></i>
                 <p>Boa Comunicação</p>
             </div>
 
-            <div class="div-item-sobre">
+            <div class="div-item-sobre" data-aos="flip-up">
                 <i class="bi bi-gem mb-10"></i>
                 <p> Experiências</p>
             </div>
 
-            <div class="div-item-sobre">
+            <div class="div-item-sobre" data-aos="flip-up">
                 <i class="bi bi-lightning-fill mb-10"></i>
                 <p>Referências</p>
             </div>
         </section>
 
-        <section class="sec-contatos" mb-30>
-            <h2>PROFISSIONAIS DISPONÍVEIS</h2>
-            <div class="item-contato">
-                <img src="" alt="">
 
+        <h2 data-aos="zoom-in">Profissionais Capacitados</h2>
+        <section class="sec-contatos" mb-30 data-aos="zoom-in-down">
+            <div>
+                <ul>
+                    <a href="https://www.instagram.com/fernandascheernutri/" class="contatos" id="btn-solido"><li>Fernanda Scheer</li></a><br>
+                    <a href="https://www.instagram.com/aleluglio/" class="contatos" id="btn-solido"><li>Alessandra Luglio</li></a><br>
+                    <a href="https://www.instagram.com/patriciadavidsonhaiat/" class="contatos" id="btn-solido"><li>Patricia Davidson</li></a><br>
+                    <a href="https://www.instagram.com/andreasantarosagarcia/" class="contatos"id="btn-solido"><li>Andrea Santa Rosa</li></a><br>
+                    <a href="https://www.instagram.com/thaismassa/" class="contatos" id="btn-solido"><li>Thais Massa</li></a><br>
+                    <a href="https://www.instagram.com/nutri_secrets/" class="contatos" id="btn-solido"><li>Aline Quissak</li></a><br>
+                </ul>
             </div>
-
-
         </section>
-
-
-
-
-
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 
 </html>
