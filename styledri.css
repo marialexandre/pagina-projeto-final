@@ -1,0 +1,187 @@
+#logobarrainicial {
+    height: 100%;
+    padding-left: 9%;
+}
+
+hr {
+    background-color: #4C9F38;
+    border: solid 4px #DD654A;
+    border-radius: 30px;
+    font-size: 27px;
+    background-color: #cad4c7;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30% 80%;
+    justify-items: center;
+    width: 100%;
+    vertical-align: top;
+    height: 150px;
+}
+
+header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul {
+    list-style: none;
+    border: 0px solid #fff;
+    align-items: center;
+
+}
+
+#menu li {
+    position: relative;
+    border-right: 1px solid rgb(243, 240, 240);
+
+
+}
+
+#menu li a {
+    color: #4C9F38;
+    text-decoration: none;
+    padding: 2px 70px;
+    display: block;
+}
+
+
+
+#menu li ul {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+#menu li a:hover {
+    background: #7ac065;
+    color: #fff;
+    box-shadow: 0 0px 0px 0 #ffffff;
+    box-shadow: 0 0px 0px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+#menu li:hover ul,
+#menu li.over ul {
+    display: block;
+}
+
+#menu li ul li {
+    border: 1px solid #fff8f8;
+    width: 150px;
+}
+
+header,
+#menu,
+#menu ul {
+    display: flex;
+    height: 150px;
+}
+
+#menu {
+    flex: 1;
+    /* isto é para a nav ocupar a largura toda menos a logo */
+    justify-content: center;
+    /* alinha horizontalmente */
+    align-items: center;
+    /* alinha verticalmente */
+}
+
+#primeiraimg {
+    border-radius: 60px;
+    width: 90%;
+    padding-left: 0%;
+}
+
+
+
+
+body{    
+    text-align: center;
+    border-bottom: 5px solid  #DD654A;
+  
+}
+img{
+    border-radius: 20px;
+    filter: brightness(100%);
+   
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:  #4C9F38;
+    font-size: 50px;
+    padding: 10px;
+    border: 1px;
+    box-shadow: 10px 5px 5px black;
+    border-style: solid;
+    border-color:  #4C9F38;
+    border-radius: 20px;
+    box-shadow: -10 -10 black;
+    background-color: rgb(25, 218, 144);
+    
+}
+
+img{
+    box-shadow: -10 -10 black;
+}
+
+p{
+    color: #575c56;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+
+div.perguntas{
+    color: #575c56;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin: auto;
+    padding: 30px;
+    }
+
+h4{
+    margin-inline: 20px;
+    color: #4C9F38;
+    
+}
+    
+
+h4:hover{
+    color: black ;
+border: 25px solid #DD654e;
+border-radius: 25px;
+background-color:	#DD654e;
+transition: 0s;
+
+}
+
+footer {
+    background-color: green;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .footer-links {
+    margin-top: 10px;
+  }
+  .footer-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+

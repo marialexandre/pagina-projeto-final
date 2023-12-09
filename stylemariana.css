@@ -1,0 +1,244 @@
+#logobarrainicial {
+    height: 100%;
+    padding-left: 9%;
+}
+
+hr {
+    background-color: #4C9F38;
+    border: solid 4px #DD654A;
+    border-radius: 30px;
+    font-size: 27px;
+    background-color: #cad4c7;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30% 80%;
+    justify-items: center;
+    width: 100%;
+    vertical-align: top;
+    height: 150px;
+}
+
+header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul {
+    list-style: none;
+    border: 0px solid #fff;
+    align-items: center;
+
+}
+
+#menu li {
+    position: relative;
+    border-right: 1px solid rgb(243, 240, 240);
+
+
+}
+
+#menu li a {
+    color: #4C9F38;
+    text-decoration: none;
+    padding: 2px 70px;
+    display: block;
+}
+
+
+
+#menu li ul {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+#menu li a:hover {
+    background: #7ac065;
+    color: #fff;
+    box-shadow: 0 0px 0px 0 #ffffff;
+    box-shadow: 0 0px 0px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+#menu li:hover ul,
+#menu li.over ul {
+    display: block;
+}
+
+#menu li ul li {
+    border: 1px solid #fff8f8;
+    width: 150px;
+}
+
+header,
+#menu,
+#menu ul {
+    display: flex;
+    height: 150px;
+}
+
+#menu {
+    flex: 1;
+    /* isto é para a nav ocupar a largura toda menos a logo */
+    justify-content: center;
+    /* alinha horizontalmente */
+    align-items: center;
+    /* alinha verticalmente */
+}
+
+#primeiraimg {
+    border-radius: 60px;
+    width: 90%;
+    padding-left: 0%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    color: #4C9F38;
+}
+
+.logotipo {
+    font-size: 2rem;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    text-align: left;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #DD654A;
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: rgb(62, 71, 100);
+    text-align: center;
+
+}
+
+h3 {
+    font-family:Georgia, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.4rem;
+}
+
+
+h6 {
+    color:#4C9F38;
+    font-size: .85rem;
+    letter-spacing: .3rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: black;
+    word-spacing: .15rem;
+}
+
+#cuide-se {
+    border: solid 1px black;
+    border-radius: 30px;
+}
+
+#cuide-se:hover {
+    border: solid 1px red;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    box-shadow: -5px -5px #4C9F38;
+}
+
+#btn-solido {
+    width: 100%;
+    border: none;
+    border-radius: 1.8rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.2rem 1.5rem;
+    margin: 1.2rem 1.5rem;
+    display: grid;
+    cursor: pointer;
+    transition: background-color 500ms;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    list-style: none;
+    box-shadow: -5px -5px #DD654A;
+}
+
+#btn-solido:hover {
+    background-color: #4C9F38;
+}
+
+.imagemari {
+    width: 90%;
+    border-radius: 30%;
+    box-shadow: -10px -10px #DD654A;
+    display: inline-block;  
+}
+
+.imagemari:hover {
+    box-shadow: 10px 10px #DD654A;
+    transition: 600ms;
+}
+
+.div-item-sobre i {
+    font-size: 2rem;
+    background-color: #DD654A;
+    color: white;
+    padding: .5rem .8rem;
+    display: inline-block;
+    border-radius: .5rem;
+}
+
+.contatos {
+    color: black;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+}
+
+.contatos:hover {
+    color: #DD654A;
+    transition: 500ms;
+
+}
+
+footer {
+    background-color: green;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .footer-links {
+    margin-top: 10px;
+  }
+  .footer-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+  }

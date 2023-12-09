@@ -1,0 +1,342 @@
+#logobarrainicial {
+    height: 100%;
+    padding-left: 9%;
+}
+
+hr {
+    background-color: #4C9F38;
+    border: solid 4px #DD654A;
+    border-radius: 30px;
+    font-size: 27px;
+    background-color: #cad4c7;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30% 80%;
+    justify-items: center;
+    width: 100%;
+    vertical-align: top;
+    height: 150px;
+}
+
+header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul {
+    list-style: none;
+    border: 0px solid #fff;
+    align-items: center;
+
+}
+
+#menu li {
+    position: relative;
+    border-right: 1px solid rgb(243, 240, 240);
+
+
+}
+
+#menu li a {
+    color: #4C9F38;
+    text-decoration: none;
+    padding: 2px 70px;
+    display: block;
+}
+
+
+
+#menu li ul {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+#menu li a:hover {
+    background: #7ac065;
+    color: #fff;
+    box-shadow: 0 0px 0px 0 #ffffff;
+    box-shadow: 0 0px 0px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+#menu li:hover ul,
+#menu li.over ul {
+    display: block;
+}
+
+#menu li ul li {
+    border: 1px solid #fff8f8;
+    width: 150px;
+}
+
+header,
+#menu,
+#menu ul {
+    display: flex;
+    height: 150px;
+}
+
+#menu {
+    flex: 1;
+    /* isto é para a nav ocupar a largura toda menos a logo */
+    justify-content: center;
+    /* alinha horizontalmente */
+    align-items: center;
+    /* alinha verticalmente */
+}
+
+#primeiraimg {
+    border-radius: 60px;
+    width: 90%;
+    padding-left: 0%;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "side content";
+
+}
+
+side {
+    margin: -3%;
+    grid-area: side;
+
+}
+
+#titulo {
+    color: #DD654A;
+    margin: 10%;
+    text-align: center;
+    border: solid 1px #cad4c7;
+    border-radius: 30px;
+    background-color: #cad4c7;
+    font-size: 45px;
+
+
+}
+
+#titulo2 {
+    text-shadow: 0px 0px 10px #dee1dc,
+        0px 0px 10px #DD654A,
+        0px 0px 20px #DD654A,
+        0px 0px 80px #DD654A;
+
+    font-size: 50px;
+    color: #DD654A;
+    text-align: center;
+
+}
+
+#frase1 {
+    text-align: justify;
+    font-size: 10pt;
+    margin: 5%;
+    color: #0e0f0e;
+    text-align: center;
+    border: solid 4px #cad4c7;
+    border-radius: 30px;
+    background-color: #cad4c7;
+    font-size: 27px;
+    box-shadow: 20px 20px 5px #DD654A;
+
+}
+
+#pergunta {
+    flex: 1;
+    padding: -6%;
+    text-align: justify;
+    text-align: center;
+
+}
+
+#obesidade {
+    color: #DD654A;
+    flex: 1;
+    padding: -6%;
+    text-align: justify;
+    text-align: center;
+
+
+}
+
+#fraseobesidade1 {
+    text-align: justify;
+    font-size: 10pt;
+    margin: 5%;
+    color: #0e0f0e;
+    text-align: center;
+    border: solid 2px #cad4c7;
+    border-radius: 30px;
+    background-color: #cad4c7;
+    font-size: 27px;
+}
+
+#fraseobesidade2 {
+    font-size: 10pt;
+    margin: auto;
+    color: #0e0f0e;
+    text-align: center;
+    border: solid 2px #cad4c7;
+    border-radius: 30px;
+    background-color: #cad4c7;
+    font-size: 27px;
+}
+
+#fraseobesidade3 {
+    text-align: center;
+    font-size: 10pt;
+    margin: 5%;
+    color: #0e0f0e;
+    text-align: center;
+    border: solid 2px #cad4c7;
+    border-radius: 30px;
+    background-color: #cad4c7;
+    font-size: 27px;
+
+}
+
+#letraimc {
+    color: #4C9F38;
+
+}
+
+#fraseimc {
+   
+    font-size: 32px;
+
+}
+
+.input-container {
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+    background: #fff !important;
+    color: #111010 !important;
+    font-family: "Apis";
+    font-size: 1.55vw;
+    line-height: 2vw;
+    font-weight: normal;
+    height: 4vw;
+    margin-top: 0vw !important;
+    margin-bottom: 1vw !important;
+    padding-left: 10px;
+
+}
+
+#resultado {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+}
+
+#iimc {
+    font-size: 30px;
+}
+
+#resultado {
+    font-size: 30px;
+}
+
+.boximc {
+    width: 100%;
+    background-color: beige;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.boximc .grid {
+    position: relative;
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    border-radius: 40px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+
+}
+
+#form {
+    background-color: #DD654A;
+    height: 100%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+section section {
+    margin: 15%;
+    text-align: 16px;
+}
+
+#laranja {
+    color: #DD654A;
+}
+
+#iimcc {
+    color: #4C9F38;
+}
+
+footer {
+    background-color: green;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .footer-links {
+    margin-top: 10px;
+  }
+  .footer-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+/*
+    text-align: center;
+    border: solid 4px #cad4c7;
+    border-radius: 30px;
+    background-color: #cad4c7;
+    font-size: 27px;
+   
+}
+
+/*ISSO É PARA DEIXAR O TEXTO LUMINOSO
+h1 {
+        text-shadow: 0px 0px 10px #dee1dc,
+                 0px 0px 20px #4add6f,
+                 0px 0px 40px #DD654A,
+                 0px 0px 80px #DD654A;
+                 
+    font-size: 50px;
+    color: #DD654A           
+}
+
+   /*ISSO É PARA FAZER O BOX 
+    color: #DD654A;
+    margin: 4%;
+    text-align: center;
+    border: solid 1px #cad4c7;
+    border-radius: 30px;
+    background-color: #cad4c7;
+    box-shadow: -10px -10px #DD654A;
+    font-size: 30px;*/

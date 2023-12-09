@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="homestyle.css">
+    <title>HOME</title>
+</head>
+
+<body>
+    <header>
+        <div id="barranav">
+            <img id="logobarrainicial" src="/Captura de tela 2023-11-30 214544.png">
+        </div>
+        <div id="menunomes">
+            <nav id="menu">
+                <ul>
+                    <li><a href="/homemicheli.html" class="active">Home</a></li>
+                    <li><a href="/videos.html">Viva Bem</a></li>
+                    <li><a href="/projeto finaldri.html">Você Sabia</a></li>
+                    <li><a href="/index.html">Procure um médico</a></li>
+                    <li><a href="/quemsomos.html">Quem Somos</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <hr />
+    <hr />
+    <main>
+        <!--Criei o side e content para organizar o texto com a imagem-->
+        <side>
+            <h1 id="titulo">
+                Saúde em primeiro lugar!
+            </h1>
+            <center><img id="primeiraimg" src="/194101368.png"></center>
+        </side>
+        <content>
+            <br>
+            <h1 id="titulo2">#CADA CONQUISTA IMPORTA</h1>
+            <h4 id="frase1">
+                <br>
+                A prática regular de exercícios físicos é um componente vital para alcançar um estilo de vida saudável.
+                Os benefícios vão além da estética, influenciando diretamente a qualidade de vida. A atividade física
+                não apenas fortalece músculos e ossos, mas também melhora a saúde cardiovascular, regula os níveis de
+                açúcar no sangue e contribui para uma mente mais equilibrada.
+                Um corpo saudável começa com uma alimentação equilibrada e nutritiva. <p></p>É aqui que entra o
+                acompanhamento nutricional personalizado. Nossos especialistas em nutrição no Radiant Health estão
+                comprometidos em orientar você na jornada para escolhas alimentares conscientes. Desde a criação de
+                planos alimentares individualizados até dicas práticas para melhorar seus hábitos alimentares, estamos
+                aqui para ajudar você a atingir seus objetivos de saúde.
+                <p></p>
+                <strong>Você faz suas metas. Suas conquistas fazem você!</strong>
+            </h4>
+        </content>
+    </main>
+    <div>
+        <h1 id="pergunta">O que é <span id="obesidade">obesidade?</span></h1>
+        <center><span id="fraseobesidade1">Trata-se de uma doença crônica, definida pela Organização Mundial de Saúde
+                (OMS) como o acúmulo anormal ou excessivo de gordura no corpo.</span></center>
+        <p></p>
+        <center><span id="fraseobesidade2">O cuidado com o excesso de peso precisa ser de longa duração e necessita de
+                acompanhamento
+                multidisciplinar. </span>
+            <p></p>
+        </center>
+        <center><span id="fraseobesidade3">Por isso a importancia de um bom acompanhamento nutricional e médico. </span>
+        </center>
+
+    </div>
+    <br>
+    <script>
+        function calculadora() {
+            var altura = document.getElementById("altura").value ** 2
+            var peso = document.getElementById("peso").value
+            console.log(peso)
+            console.log(altura)
+            console.log(peso / altura)
+            var resultado = document.getElementById("resultado")
+            if (altura == "") {
+                console.log("aqui")
+                resultado.innerText = "Precisa digitar peso e altura."
+            }
+            else {
+                resultado.innerText = (peso / altura).toFixed(1);
+                if (resultado.innerText < 18.5) {
+                    resultado.innerText = resultado.innerText + " Abaixo do peso."
+                }
+                else if (resultado.innerText >= 18.6 && resultado.innerText < 24.9) {
+                    resultado.innerText = resultado.innerText + " Peso ideal."
+                }
+                else if (resultado.innerText >= 25 && resultado.innerText < 29.9) {
+                    resultado.innerText = resultado.innerText + " Excesso de peso."
+                }
+                else if (resultado.innerText >= 30 && resultado.innerText < 35) {
+                    resultado.innerText = resultado.innerText + " Obesidade."
+                }
+                else if (resultado.innerText > 35) {
+                    resultado.innerText = resultado.innerText + " Obesidade extrema."
+                }
+            }
+        }
+
+    </script>
+    </head>
+    <div class="boximc">
+        <div class="grid">
+            <section>
+                <h1>
+                    <section>Ainda não sabe seu <span id="laranja">Índice de Massa Corporal (IMC)?</span>
+                        <p></p>
+                        Preencha os dados ao lado e conheça mais sobre o seu corpo.
+                        <p></p>
+                        O cálculo de <span id="iimcc">IMC</span> é a forma mais popular de identificar o excesso de gordura corporal, mas
+                        existem outras maneiras de diagnosticar a obesidade.
+                        <p></p>
+
+                        Procure um médico para avaliação e indicação do tratamento mais adequado, de acordo com seu
+                        perfil e histórico de saúde individual.
+                    </section>
+                </h1>
+            </section>
+            <section id="form">
+                <section>
+                    <div class="container">
+                        <h1 id="fraseimc">Para calcular o <span id="letraimc">IMC</span> preencha os campos abaixo.</h1>
+
+                        <div class="input-container">
+                            <label for="altura">ALTURA:</label>
+                            <br>
+                            <input type="number" id="altura" placeholder="Altura (m)" step="0.01">
+                        </div>
+                        <div class="input-container">
+                            <label for="peso">PESO:</label>
+                            <br>
+                            <input type="number" id="peso" placeholder="Peso (kg)" step="0.01">
+                        </div>
+                        <br>
+                        <button onclick="calculadora()">Calcular</button>
+                        <h1 id="iimc">IMC=</h1>
+                        <div id="resultado"></div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+          <a href="#">Contato</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Redes Sociais</a>
+        </div>
+        <p>&copy; 2023 Tech para manas. Todos os direitos reservados.</p>
+      </footer>
+
+
+</body>
+
+</html>
+<!--   <h1>Para calcular o IMC, basta preencher os campos abaixo.</h1>
+    Peso: <br />
+    <input id="peso" placeholder="Digite o seu peso" type="number" step="0.01" /><br /><br />
+    Altura: <br />
+    <input id="altura" placeholder="Digite sua altura" type="number" step="0.01" /><br /><br />
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <section ></section>
+    <p id="resultado"></p>
+
+    <script>
+        function calculadora() {
+            var altura = document.getElementById("altura").value ** 2
+            var peso = document.getElementById("peso").value
+            console.log(peso)
+            console.log(altura)
+            console.log(peso / altura)
+            var resultado = document.getElementById("resultado")
+            if (altura == "") {
+                console.log("aqui")
+                resultado.innerText = "Precisa digitar peso e altura."
+            }
+            else {
+                resultado.innerText = peso / altura
+                if (resultado.innerText < 18.5) {
+                    resultado.innerText = resultado.innerText + " Abaixo do peso."
+                }
+                else if (resultado.innerText >= 18.6 && resultado.innerText < 24.9) {
+                    resultado.innerText = resultado.innerText + " Peso ideal."
+                }
+                else if (resultado.innerText >= 25 && resultado.innerText < 29.9) {
+                    resultado.innerText = resultado.innerText + " Excesso de peso."
+                }
+                else if (resultado.innerText >= 30 && resultado.innerText < 35) {
+                    resultado.innerText = resultado.innerText + " Obesidade."
+                }
+                else if (resultado.innerText > 35) {
+                    resultado.innerText = resultado.innerText + " Obesidade extrema."
+                }
+            }
+        }
+        function calcularIMC() {
+            const peso = parseFloat(document.getElementById("peso").value);
+            const altura = parseFloat(document.getElementById("altura").value);
+
+            const imc = (peso / (altura * altura)).toFixed(1);
+
+            document.querySelector("section").innerHTML = imc;
+        }
+
+    </script>     -->
+
+<!--
+    <h1>Para calcular o IMC, basta preencher os campos abaixo.</h1>
+    Peso: <br />
+    <input id="peso" placeholder="Digite o seu peso" type="number" step="0.01" /><br /><br />
+    Altura: <br />
+    <input id="altura" placeholder="Digite sua altura" type="number" step="0.01" /><br /><br />
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <p></p>
+    -->
+
+<!-- 
+         <script>
+    function calcularIMC() {
+        const peso = parseFloat(document.getElementById("peso").value);
+        const altura = parseFloat(document.getElementById("altura").value);
+
+        const imc = (peso / (altura * altura)).toFixed(1);
+
+        document.querySelector("p").innerHTML = imc;
+    }
+</script>  -->
+
+
+
+<!-- <div>
+        Ainda não sabe seu Índice de Massa Corporal (IMC)?
+        Preencha os dados ao lado e conheça mais sobre o seu corpo
+
+        Para calcular o IMC, basta preencher os campos abaixo.
+    </div>
+
+-->
